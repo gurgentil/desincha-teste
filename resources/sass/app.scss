@@ -1,0 +1,84 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+    @apply .font-default;
+}
+
+.icon {
+    @apply .h-6 .w-6 .fill-current .block;
+}
+
+.icon-large {
+    @apply .icon .h-10 .w-10;
+}
+
+.heading {
+    @apply .font-bold .uppercase .mb-4 .text-xl;
+}
+
+.paddings {
+    @apply .py-16 .px-8;
+}
+
+.outline {
+    outline: 1px solid blue;
+}
+
+.button {
+    @apply .font-bold .bg-green-500 .rounded .text-white .py-4 .px-12 .uppercase .text-center .shadow;
+    transition: all ease-in 0.05s;
+}
+
+.button:hover,
+.button:focus {
+    @apply .shadow-lg;
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+}
+
+.play-button {
+    @apply .bg-orange-500 .text-white .rounded-full .h-20 .w-20 .flex .items-center .justify-center .cursor-pointer .shadow-lg;
+    transition: transform ease-in 0.05s;
+}
+
+.play-button:hover,
+.play-button:focus {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+}
+
+.bg-green-gradient {
+    background: rgb(182,205,81);
+    background: linear-gradient(to bottom, rgba(182,205,81,0.74) 0%, rgba(182,205,81,1) 25%, rgba(80,154,74,1) 100%);
+}
+
+.bg-blue-gradient {
+    background: rgb(1,72,150);
+    background: linear-gradient(to bottom, rgba(1,72,150,1) 0%, rgba(0,111,207,1) 75%, rgba(0,112,208,0.79) 100%);
+}
+
+.bg-see-through {
+    background: rgba(75, 87, 21, .4);
+}
+
+.v-lazy-image {
+    filter: blur(10px);
+    transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+    filter: blur(0);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-polygon {
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 8rem);
+    -webkit-clip-path: (0 100%,100% 100%,100% 0,0 8rem);
+}

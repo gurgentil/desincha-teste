@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#74BB62">
+
+        <!-- meta tags, fb, twitter, ..., analytics -->
+
+        <title>Desinchá</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="icon" type="image/png">
+    </head>
+    <body class="bg-gray-200">
+        <div id="app">
+            <navigation></navigation>
+
+            <div class="min-h-screen md:min-h-144 p-8 relative text-white flex items-end bg-cover bg-no-repeat bg-top" style="background-image: url('./images/bruna-marq.png');">
+                <button type="button" class="play-button absolute m-auto inset-0">
+                    <svg class="icon-large" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                </button>
+                
+                <div class="flex container mx-auto text-shadow">
+                    <div class="flex items-center flex-col">
+                        <h3 class="text-sm">Pré-<strong>lançamento</strong></h3>
+                        <img class="w-20 h-20 rounded-full my-4 shadow-lg" src="images/pre-lancamento.jpg" alt="Caixa de Desinchá Noite">
+                        <h4 class="font-bold">Desinchá Noite</h4>
+                    </div>
+                </div>
+            </div>
+
+            <section class="paddings text-center text-white min-h-screen flex items-center md:min-h-144 bg-blue-gradient">
+                <div class="container mx-auto md:flex md:items-center md:flex-wrap">
+                    <h2 class="heading md:w-full">Chega de contar carneirinhos.</h2>
+                    
+                    <div class="flex md:mr-16 flex justify-center max-w-full mx-auto w-96">
+                        <v-lazy-image class="max-w-full" src="images/desincha-noite.png" alt="Desinchá Noite" />
+                    </div>
+
+                    <div class="md:flex-1 md:text-left md:max-w-2xl">
+                        <h3 class="heading mt-4">Desinchá Noite</h3>
+                        
+                        <p>Assista o vídeo para ver as recomendações da nutricionista Ana Paula Montemor sobre o consumo do Desinchá e os seus ingredientes. Assista o vídeo para ver as recomendações da nutricionista Ana Paula.</p>
+                        
+                        <p class="mt-8 flex justify-between items-center text-lg font-bold text-shadow">
+                            <a href="#" class="text-green-400 p-2 flex items-center hover:underline">
+                                Saiba mais 
+                                <svg class="ml-1 icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-orange-500 uppercase p-2 flex items-center hover:underline">
+                                Comprar 
+                                <svg class="ml-1 icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="desincha" class="paddings text-center text-white min-h-screen flex items-center md:min-h-144 bg-green-gradient">
+                <div class="container mx-auto md:flex md:items-center md:flex-wrap">
+                    <h2 class="heading md:w-full">Seu chá com o melhor que a natureza e a ciência podem oferecer.</h2>
+
+                    <div class="flex justify-center md:mr-16 max-w-full mx-auto w-96">
+                        <v-lazy-image class="max-w-full" src="images/desincha.png" alt="Desinchá" />
+                    </div>
+                    
+                    <div class="md:flex-1 md:text-left md:max-w-2xl">
+                        <h3 class="heading mt-4">Desinchá</h3>
+                        
+                        <p>Assista o vídeo para ver as recomendações da nutricionista Ana Paula Montemor sobre o consumo do Desinchá e os seus ingredientes. Assista o vídeo para ver as recomendações da nutricionista Ana Paula.</p>
+                        
+                        <p class="mt-8 flex justify-between items-center text-lg font-bold text-shadow">
+                            <a href="#" class="text-green-400 p-2 flex items-center hover:underline">
+                                Saiba mais 
+                                <svg class="ml-1 icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-orange-500 uppercase p-2 flex items-center hover:underline">
+                                Comprar 
+                                <svg class="ml-1 icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="paddings text-center min-h-screen flex items-center md:min-h-144">
+                <div class="container mx-auto md:flex md:items-center md:flex-wrap">
+                    <div class="flex items-center justify-between md:justify-center md:w-full mb-4">
+                        <img class="max-w-full sm:m-4 w-20 h-20" src="images/ingredientes-selecionados.png" alt="Ingredientes selecionados">
+                        <img class="max-w-full sm:m-4 w-20 h-20" src="images/formula-exclusiva.png" alt="Fórmula exclusiva">
+                        <img class="max-w-full sm:m-4 w-20 h-20" src="images/cha-numero-um.png" alt="O chá número 1 do Brasil">
+                    </div>
+                    
+                    <div class="flex md:mr-16 justify-center max-w-full mx-auto w-96">
+                        <v-lazy-image class="max-w-full" src="images/meus-ingredientes.png" alt="8 ingredientes e mais nada" />
+                    </div>
+
+                    <div class="md:flex-1 md:text-left md:max-w-2xl">
+                        <h2 class="heading mt-4 text-green-500">Meus ingredientes</h2>
+                        
+                        <p>Assista o vídeo para ver as recomendações da nutricionista Ana Paula Montemor sobre o consumo do Desinchá e os seus ingredientes. Assista o vídeo para ver as recomendações da nutricionista Ana Paula.</p>
+                        
+                        <a href="#" class="button block mt-8 md:inline-block">Saiba mais</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="p-8 relative bg-no-repeat bg-cover bg-center h-96 md:min-h-144" style="background-image: url('./images/video-nutricionista.jpg');">
+                <button type="button" class="play-button m-auto inset-0 absolute">
+                    <svg class="icon-large" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                </button>
+
+                <div class="text-white flex flex-col justify-end h-full items-start container mx-auto text-shadow">
+                    <h2 class="heading">Desinchá em 3 palavras</h2>
+                    <p>Como você descreveria o Desinchá em 3 palavras?</p>
+                </div>
+            </div>
+    
+            <section class="paddings container mx-auto">
+                <h2 class="heading text-green-500">Receitas Desinchá</h2>
+                
+                <carousel 
+                    :nav="false" 
+                    :dots="false" 
+                    :margin="24" 
+                    :auto-width="true"
+                    :items="50"
+                    :lazy-load="true">
+
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+                    <article class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="relative w-full h-full block">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/receita.png" alt="Receita Desinchá">
+
+                            <header class="absolute bottom-0 inset-x-0 text-center text-white font-bold p-4 text-shadow z-50 bg-see-through">
+                                <h4 class="text-lg">Smoothie Bowl</h4>
+                                <small class="text-xs">Ver mais</small>
+                            </header>
+                        </a>
+                    </article>
+
+                </carousel>
+            </section>
+
+            <section class="paddings container mx-auto">
+                <h2 class="heading text-green-500">Today at Desinchá</h2>
+    
+                <carousel 
+                    :nav="false" 
+                    :dots="false" 
+                    :margin="24" 
+                    :auto-width="true"
+                    :items="50"
+                    :lazy-load="true">
+
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                    <div class="w-64 rounded-lg overflow-hidden shadow-lg">
+                        <a href="#" class="block w-full h-64 relative overflow-hidden">
+                            <img class="min-h-full min-w-full absolute inset-0 m-auto owl-lazy" data-src="images/ingressos.png" alt="Ingressos Desinchá">
+                        </a>
+                        <p class="bg-white py-4 px-6 text-sm">Foi inaugurada o meu cantinho aqui em São Paulo, a @casadesincha! Ainda tem muita coisa...</p>
+                        <a href="#" class="bg-green-500 block text-center font-bold uppercase text-white py-4 px-6">Ingressos</a>
+                    </div>
+                </carousel>
+            </section>
+    
+            <section class="py-16 px-8 text-center container mx-auto md:max-w-2xl">
+                <h2 class="heading text-green-500">Perguntas frequentes</h2>
+                <p>Veja as respostas de nutricionistas e da minha equipe de atendimento às perguntas mais frequentes que recebemos.</p>
+                <a href="#" class="button block mt-8 md:inline-block">Ver perguntas</a>
+            </section>
+    
+            <footer class="text-white mt-4 pt-32 bg-green-gradient footer-polygon">
+                <div class="px-8 py-8 container mx-auto">                    
+                    <div class="flex mb-8">
+                        <div class="flex-1 mr-4">
+                            <img class="w-auto max-w-full" src="images/logo.png" alt="Desinchá">
+                        </div>
+        
+                        <ul class="text-sm w-4/6">
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Onde encontrar</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Imprensa</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Fale conosco</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Termos de uso</a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 block hover:underline">Perguntas frequentes</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="flex items-end text-sm justify-between">
+                        <ul class="flex items-center">
+                            <li class="mr-2">
+                                <a href="#" title="Instagram">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 23H1V12A11 11 0 0 1 12 1h11v11a11 11 0 0 1-11 11zM9.48 6A3.483 3.483 0 0 0 6 9.48v5.04A3.484 3.484 0 0 0 9.48 18h5.04A3.484 3.484 0 0 0 18 14.52V9.48A3.484 3.484 0 0 0 14.52 6zm5.16 10.8H9.36a2.162 2.162 0 0 1-2.16-2.16V9.36A2.162 2.162 0 0 1 9.36 7.2h5.28a2.162 2.162 0 0 1 2.16 2.16v5.28a2.162 2.162 0 0 1-2.16 2.16zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm3.15-.9a.75.75 0 1 0 .751.75.751.751 0 0 0-.751-.75zM12 13.8a1.8 1.8 0 1 1 1.8-1.8 1.8 1.8 0 0 1-1.8 1.8z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" title="Facebook">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 23H1V12A11 11 0 0 1 12 1h11v11a11.007 11.007 0 0 1-7.4 10.4v-5.8H18v-3.2h-2.4v-2c0-.6.275-1.2.8-1.2H18V7h-2.4a3.2 3.2 0 0 0-3.2 3.2v3.2H10v3.2h2.4v6.393c-.147.007-.278.007-.4.007z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Youtube">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 23H1V12A11 11 0 0 1 12 1h11v11a11 11 0 0 1-11 11zm.23-16l-1.149.043c-.832 0-1.705.024-2.6.072a10.245 10.245 0 0 0-1.916.2 1.7 1.7 0 0 0-1.247 1.254A14.343 14.343 0 0 0 5 12.061l.044.608c0 .455.024.963.072 1.511a7.406 7.406 0 0 0 .2 1.374A1.7 1.7 0 0 0 6.569 16.8a29.946 29.946 0 0 0 5.661.318l1.15-.043c.831 0 1.7-.024 2.6-.072a10.209 10.209 0 0 0 1.916-.2 1.7 1.7 0 0 0 1.251-1.251 14.362 14.362 0 0 0 .318-3.493l-.043-.607c0-.455-.024-.963-.072-1.512a7.563 7.563 0 0 0-.2-1.373 1.7 1.7 0 0 0-1.251-1.251A29.967 29.967 0 0 0 12.23 7zm-1.445 7.231V9.892l3.752 2.169-3.751 2.169z" />
+                                    </svg>  
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <p class="flex items-center flex-col">
+                            Compre com segurança: 
+                            <a class="block mt-2" href="#">
+                                <img src="images/logo-ebit.png" alt="Ebit">
+                            </a>
+                        </p>
+                    </div>
+        
+                    <small class="block mt-8 text-xs">Desinchá&reg; LTDA – 27.558.408/000130 – <a class="hover:underline" href="mailto:contato@desincha.com.br">contato@desincha.com.br</a> &copy; 2019 Desinchá&reg;. Todos os direitos reservados.</small>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
